@@ -22,4 +22,5 @@ const User = sequelize.define("User", {
     autoIncrement: true,
   },
 });
+
 module.exports = User;

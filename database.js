@@ -12,13 +12,14 @@ const sequelize = new Sequelize(
     dialect: process.env.dialect,
   }
 );
+
 sequelize
   .authenticate()
   .then(() => {
     console.log("connection established successfully");
   })
-  .catch((err) => {
-    console.log("unable to connect", err);
+  .catch((error) => {
+    console.log("unable to connect", error);
   });
 
 module.exports = sequelize;
