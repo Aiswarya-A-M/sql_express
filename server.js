@@ -15,8 +15,8 @@ sequelize
   });
 
 app.get("/", async (req, res) => {
-  const user = await User.findAll();
-  res.json(user);
+  const users = await User.findAll();
+  res.json(users);
 });
 
 app.post("/user", async (req, res) => {
