@@ -1,5 +1,5 @@
 const { Sequelize, DataTypes, UUIDV4 } = require("sequelize");
-const sequelize = require("./database");
+const sequelize = require("../database");
 const uuid = require("uuid");
 const User = sequelize.define("User", {
   name: {
